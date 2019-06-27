@@ -2,7 +2,7 @@ module ApplicationHelper
 
 	def new_title yes
 		if yes
-			"yes!"
+			"yes"
 		else
 			"no"
 		end
