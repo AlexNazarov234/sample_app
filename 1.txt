@@ -1,0 +1,53 @@
+Started with run options --seed 62046
+
+
+Progress: |[0m[1000D[KERROR["test_login_with_invalid_information", #<Minitest::Reporters::Suite:0x000000000955b3c0 @name="UsersLoginTest">, 1.2708874669624493]
+ test_login_with_invalid_information#UsersLoginTest (1.27s)
+SyntaxError:         SyntaxError: C:/Projects/sample_app/app/helpers/sessions_helper.rb:16: syntax error, unexpected keyword_elsif, expecting ')'
+        		elsif (user_id = cookies.signed[:u...
+        		^~~~~
+        C:/Projects/sample_app/app/helpers/sessions_helper.rb:22: syntax error, unexpected keyword_end, expecting ')'
+        		end	
+        		^~~
+        C:/Projects/sample_app/app/helpers/sessions_helper.rb:40: syntax error, unexpected keyword_end, expecting ')'
+            app/controllers/application_controller.rb:1:in `<top (required)>'
+            app/controllers/sessions_controller.rb:1:in `<top (required)>'
+            test/integration/users_login_test.rb:13:in `block in <class:UsersLoginTest>'
+
+=============[0m[1000D[KERROR["test_login_with_valid_information", #<Minitest::Reporters::Suite:0x0000000009520bf8 @name="UsersLoginTest">, 1.2868684630375355]
+ test_login_with_valid_information#UsersLoginTest (1.29s)
+SyntaxError:         SyntaxError: C:/Projects/sample_app/app/helpers/sessions_helper.rb:16: syntax error, unexpected keyword_elsif, expecting ')'
+        		elsif (user_id = cookies.signed[:u...
+        		^~~~~
+        C:/Projects/sample_app/app/helpers/sessions_helper.rb:22: syntax error, unexpected keyword_end, expecting ')'
+        		end	
+        		^~~
+        C:/Projects/sample_app/app/helpers/sessions_helper.rb:40: syntax error, unexpected keyword_end, expecting ')'
+            app/controllers/sessions_controller.rb:1:in `<top (required)>'
+            test/integration/users_login_test.rb:23:in `block in <class:UsersLoginTest>'
+
+==============[0m[1000D[KERROR["test_valid_signup_information", #<Minitest::Reporters::Suite:0x000000000bbbf2f0 @name="UsersSignupTest">, 2.7274322810117155]
+ test_valid_signup_information#UsersSignupTest (2.73s)
+ActionView::Template::Error:         ActionView::Template::Error: undefined method `logged_in?' for #<#<Class:0x0000000009467a90>:0x000000000942fe10>
+            app/views/layouts/_header.html.erb:10:in `_app_views_layouts__header_html_erb__443460526_95797380'
+            app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__710670951_77641080'
+            test/integration/users_signup_test.rb:21:in `block in <class:UsersSignupTest>'
+
+=============[0m[1000D[KERROR["test_invalid_signup_information", #<Minitest::Reporters::Suite:0x000000000a5f30c0 @name="UsersSignupTest">, 2.7876014610519633]
+ test_invalid_signup_information#UsersSignupTest (2.79s)
+ActionView::Template::Error:         ActionView::Template::Error: undefined method `logged_in?' for #<#<Class:0x0000000009467a90>:0x000000000bc6f6c8>
+            app/views/layouts/_header.html.erb:10:in `_app_views_layouts__header_html_erb__443460526_95797380'
+            app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__710670951_77641080'
+            test/integration/users_signup_test.rb:9:in `block in <class:UsersSignupTest>'
+
+==============[0m[1000D[KERROR["test_layout_links", #<Minitest::Reporters::Suite:0x000000000c248068 @name="SiteLayoutTest">, 2.8891038090223446]
+ test_layout_links#SiteLayoutTest (2.89s)
+ActionView::Template::Error:         ActionView::Template::Error: undefined method `logged_in?' for #<#<Class:0x000000000c143a50>:0x000000000c142100>
+            app/views/layouts/_header.html.erb:10:in `_app_views_layouts__header_html_erb__443460526_95797380'
+            app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__710670951_77641080'
+            test/integration/site_layout_test.rb:9:in `block in <class:SiteLayoutTest>'
+
+==============|
+
+Finished in 2.89051s
+5 tests, 0 assertions, 0 failures, 5 errors, 0 skips
